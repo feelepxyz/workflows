@@ -1,5 +1,15 @@
-name: gha-oidc
-on: workflow_dispatch
+name: OIDC Token Dumper
+
+permissions:
+  contents: read
+
+on:
+  workflow_call:
+    inputs:
+      greeting:
+        description: "Greeting to echo"
+        required: false
+        type: string
 jobs:
   request-oidc-token:
     runs-on: ubuntu-latest
