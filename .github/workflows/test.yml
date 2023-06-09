@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: hmarr/debug-action@v2
+      - uses: actions/checkout@v3
       - run: echo "blaaaaaaaa" > test.yml
       - uses: feelepxyz/workflows/.github/workflows/input-dumper.yml@main
         with:
