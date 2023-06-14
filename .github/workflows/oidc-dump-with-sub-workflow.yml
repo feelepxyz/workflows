@@ -10,6 +10,8 @@ on:
         description: "Greeting to echo"
         required: false
         type: string
+        
+  workflow_dispatch:
 jobs:
   request-oidc-token:
     runs-on: ubuntu-latest
